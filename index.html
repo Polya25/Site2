@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Нейронная сеть</title>
+
+    <style>
+        header {
+            background-color: #FFF5EE;
+            justify-content: space-between;
+            height: 80px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, .2);
+        }
+
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            flex-flow: nowrap;
+            flex-direction: row;
+            justify-content: center;
+            transition: .5s;
+            position: relative;
+            top: 27px;
+
+        }
+
+        ul a {
+
+            padding: 50px;
+            font-size: 17px;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #262625;
+            font-weight: bold;
+        }
+
+        ul li a:hover {
+            color: #FA8072;
+            transition: .5s
+        }
+
+        .container {
+            text-align: center;
+            position: relative;
+            top: 20px;
+
+        }
+
+        .container img {
+            filter: brightness(70%);
+        }
+
+
+
+        .text {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: 'Times New Roman', Times, serif;
+            color: #F5FFFA;
+        }
+
+        .card1 {
+            background-color: #A0522D;
+            width: 310px;
+            height: 250px;
+            position: relative;
+            top: 40px;
+            padding: 20px 16px;
+
+
+        }
+
+
+
+        .card2 {
+            background-color: #CD853F;
+            width: 310px;
+            height: 250px;
+            position: relative;
+            top: 40px;
+            padding: 20px 16px;
+
+        }
+
+
+
+        .card3 {
+            background-color: #A0522D;
+            width: 310px;
+            height: 250px;
+            position: relative;
+            top: 40px;
+            padding: 20px 16px;
+        }
+
+
+
+        .cardall {
+            list-style-type: none;
+            display: flex;
+            flex-flow: nowrap;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+
+        .card20 {
+            background-color: #CD853F;
+            width: 210px;
+            height: 260px;
+            position: relative;
+            top: 40px;
+            padding: 20px 16px;
+
+
+        }
+
+
+
+        .card21 {
+            background-color: #A0522D;
+            width: 210px;
+            height: 260px;
+            position: relative;
+            top: 40px;
+            padding: 20px 16px;
+
+        }
+
+
+
+        .card22 {
+            background-color: #A0522D;
+            width: 210px;
+            height: 260px;
+            position: relative;
+            top: 40px;
+            padding: 20px 16px;
+        }
+
+        .card23 {
+            background-color: #A0522D;
+            width: 210px;
+            height: 260px;
+            position: relative;
+            top: 40px;
+            padding: 20px 16px;
+        }
+
+
+
+        .cardall20 {
+            list-style-type: none;
+            display: flex;
+            flex-flow: nowrap;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+
+        .servtext {
+            background-color: #FFF5EE;
+            position: relative;
+            top: 70px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+            display: flex;
+        }
+
+        .servtext img {
+            margin-top: 5%;
+        }
+
+
+        .matrix {
+            display: flex;
+            position: relative;
+            top: 100px;
+            color: #262625;
+        }
+
+        .matrix2 {
+            display: flex;
+            position: relative;
+            top: 150px;
+        }
+
+
+        .CNN {
+            text-align: center;
+            position: relative;
+            top: 40px;
+        }
+
+        .CNN img {
+            filter: brightness(50%);
+        }
+
+
+        .CNNtext {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: 'Times New Roman', Times, serif;
+            color: #FFE4E1;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#disease">Заболевания кожи</a></li>
+                <li><a href="#CNN">Нейронная сеть</a></li>
+                <li><a href="#picture">Загрузить свое изображение</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <img src="https://medhouse-mc.com/images/services/oncology/skin_cancer.jpg" alt="medlab" width="95%">
+
+        <div class="text">
+            <h1 style="font-size: 55px; color: #FAEBD7">Заболевания кожи</h1>
+            <p style="font-size: 25px; color: #FAEBD7">
+                Нельзя недооценивать разнообразные высыпания, зуд, боль, изменение цвета кожных покровов, шелушение—
+                при любых отклонениях от нормы, тем более не проходящих длительное время, нужно обращаться к
+                специалисту.
+            </p>
+
+        </div>
+    </div>
+
+    <A name="disease">
+        <div class="cardall">
+            <div class="card1">
+                <font face="Times New Roman" color=#F5FFFA align=center>
+                    <h4 style="font-size: 25px">Актинический кератоз и интраэпителиальная карцинома</h4>
+                    <p style="font-size: 18px">Распространенные неинвазивные варианты плоскоклеточного рака, которые
+                        можно
+                        лечить без хирургического вмешательства</p>
+                </font>
+            </div>
+
+            <div class="card2">
+                <font face="Times New Roman" color=#F5FFFA align=center>
+                    <h4 style="font-size: 25px">Базально-клеточная карцинома</h4>
+                    <p style="font-size: 18px">Распространенный вариант эпителиального рака кожи, который редко
+                        метастазирует, но при отсутствии лечения разрастается
+                    </p>
+                </font>
+            </div>
+
+            <div class="card3">
+                <font face="Times New Roman" color=#F5FFFA align=center>
+                    <h4 style="font-size: 25px">Доброкачественный кератоз, себорейный кератоз</h4>
+                    <p style="font-size: 18px">Cолнечный лентиго и лишайник плоскоклеточный как кератоз
+                    </p>
+                </font>
+            </div>
+        </div><br><br>
+    </A>
+
+
+    <div class="cardall20">
+        <div class="card20">
+            <font face="Times New Roman" color=#F5FFFA align=center>
+                <h4 style="font-size: 25px">Дерматофиброма</h4>
+                <p style="font-size: 18px">Доброкачественное поражение кожи как воспалительная реакция на травму
+                </p>
+            </font>
+        </div>
+
+        <div class="card21">
+            <font face="Times New Roman" color=#F5FFFA align=center>
+                <h4 style="font-size: 25px">Меланоцитарные невусы</h4>
+                <p style="font-size: 18px">Доброкачественные новообразования меланоцитов
+
+                </p>
+            </font>
+        </div>
+
+        <div class="card22">
+            <font face="Times New Roman" color=#F5FFFA align=center>
+                <h4 style="font-size: 25px">Меланома</h4>
+                <p style="font-size: 18px">Cмертельная форма рака кожи, которая на ранней стадии часто не
+                    диагностируется или ошибочно диагностируется как доброкачественное поражение кожи
+
+                </p>
+            </font>
+        </div>
+
+        <div class="card23">
+            <font face="Times New Roman" color=#F5FFFA align=center>
+                <h4 style="font-size: 25px">Сосудистые поражения кожи</h4>
+                <p style="font-size: 18px">Приобретенные и врожденные или проявляющиеся вскоре после рождения
+                    (сосудистые родимые пятна)
+                </p>
+            </font>
+        </div>
+    </div><br><br>
+
+    <A name="CNN">
+        <div class="CNN">
+            <img src="https://sun9-70.userapi.com/impg/QNFQGn8Y3kcUStf7tSDmng_UDdvIiTEcUhKQKw/4cW1U16tzrw.jpg?size=625x435&quality=96&sign=1c80ef9d2b3797d87352944a4c4fca6d&type=album"
+                alt="covid" width="1150px" height="500px">
+
+            <div class="CNNtext">
+                <h1 style="font-size: 90px">Нейронная сеть</h1>
+
+            </div>
+        </div>
+
+
+
+        <div class="servtext">
+            <p style="font-size: 22px; padding: 25px">
+                <font color="#B22222">Рак кожи</font> остается одним из наиболее распространенных видов
+                злокачественных опухолей, и встречается все чаще из-за усиления ультрафиолетового излучения. Диагностика
+                данного
+                типа рака представляет проблему, поскольку отличить злокачественное образование об доброкачественного
+                сложно. 
+                <br><br>
+                В настоящее время есть возможность задействовать систему на основе нейросетей, которая способна повысить
+                точность диагностики. Набор данных HAM10000 служил учебным набором для нейронной сети. В итоге созданная
+                система способна распознавать 7 категорий поражений кожи: от дерматофибромы, солнечного лентиго,
+                разных видов кетароза до меланомы и других видов рака.
+                <br><br><br><br>
+                <font size="5"><b>Оценка качества</b></font>
+            </p>
+
+            <img src="https://psv4.userapi.com/c237331/u241254389/docs/d32/41660200dacf/matritsa1.png?extra=1k4Dr6jd86C5K8aZ8HZ0tyOH5anycqlxxFkMarRP401kiKn2vaaCdQvr-m2aKAiG0rHaZMXTZlpaMhp7Qj20T8MBSPFrJjxM2UoPcUTqu97SUtBTEHUO3UNGX4smmEb9RrSZgMTXNyrecoHwoY_dRaP08uM"
+                height="300px" alt="нс">
+
+        </div>
+
+        <div class="matrix">
+            <img src="https://psv4.userapi.com/c237331/u241254389/docs/d42/4056693dc458/matritsa2.png?extra=XjEqI5ok9sYHcuvyo0W_Ku5SzsPFLHW1dKHnMpEI6NmOE02UFFgFQsV-8KghUK4gWdzqt9x1R5S5EDlVn1yS262zu6WQYGlvz6E1zZTPHhgEHSbX2Zg_UomlzNIlWsyPavnxt9KUKLxuAR9lRHRGPHErEL8"
+                height="300px" alt="нс">
+            <img src="https://psv4.userapi.com/c237331/u241254389/docs/d10/ddd36376409f/index.png?extra=F2TyNhT9LVhGdttw0G7HuuWwTv5cCq_NOaFjmzx2ZYyUyw8o9AJtVF8kQBSlidxjLjnbI0irtBSTY8Ycl5usTYUZAEo0jJ1lJpzKdIhbnymP7xrlLM6K8Qp0JtsVI_zWbm-PkwqfK8T7myuVEJZuvsog9xs"
+                height="300px" alt="нс">
+
+        </div>
+        <div class="matrix2">
+            <img src="https://sun9-37.userapi.com/impg/tiZC1fhKGdkjo3-RIrjOBH5tMfCpnnFPU1PTPQ/RnDs4kL_EZM.jpg?size=496x350&quality=96&sign=993a53abdbce7d1f202d7ce394ab3881&type=album"
+                height="300px" width="350px" alt="нс">
+            <img src="https://psv4.userapi.com/c237331/u241254389/docs/d18/352c26c97152/obuchenie.png?extra=NUepsnFoeRxrw1MwkOiPHDh1QjuRcZXnJfyk1Cj-815mU4FutZQgc14K7XoUHTuoElbPDq1vqcbR2CmKoT68IkjxyCoSTh4LlVu-zGCy3nHIIoMfZSf8PtQYazyLr7O2jhLuA-P96z-Ekt4Ykm-Rd7kFUjY"
+                height="300px" width="850px" alt="нс">
+
+
+        </div>
+    </A>
+
+
+
+</body>
+
+</html>
